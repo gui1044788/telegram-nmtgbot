@@ -9,8 +9,8 @@
 
 先克隆项目
 ```bash
-git clone https://github.com/axiref/telegram-pwsbot
-cd telegram-pwsbot
+git clone https://github.com/gui1044788/telegram-nmtgbot.git
+cd telegram-nmtgbot
 npm install
 ```
 然后创建配置文件，直接复制一份 `env.example`
@@ -60,7 +60,7 @@ npm install pm2 -g
 pm2 start
 ```
 
-就可以看到名为 `pwsbot`的任务已经被运行，重启项目可使用 `pm2 restart pwsbot` 命令来完成。
+就可以看到名为 `pwsbot`的任务已经被运行，重启项目可使用 `pm2 restart nmtgbot` 命令来完成。
 
 项目启动后，必须将你的机器人添加到审稿群，机器人会将收到的稿件转发至审稿群，群内所有人皆可审核稿件，如果你没有审稿群，你应该建立一个。
 

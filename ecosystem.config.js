@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: 'pwsbot',
+    name: 'nmtgbot',
     script: 'npm run start',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/

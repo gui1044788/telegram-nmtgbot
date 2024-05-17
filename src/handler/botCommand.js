@@ -154,5 +154,5 @@ onText(/\/start/, ({ msg, rep }) => {
  * @param  {String} /\/help/ 
  */
 onText(/\/version/, ({ rep }) => {
-  rep(lang.get('help', {ver: '1.0', link: 'https://github.com/axiref/telegram-pwsbot'}));
+  rep(lang.get('help', {ver: '1.0', link: 'https://github.com/gui1044788/telegram-nmtgbot'}));
 })
