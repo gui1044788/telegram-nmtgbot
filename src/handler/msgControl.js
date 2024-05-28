@@ -13,7 +13,7 @@ export default
    */
   subAsk (message) {
     let yeslabel = message.forward_date ? lang.get('yes_only') : lang.get('yes');
-    let inline_keyboard = [[{text: yeslabel, callback_data: vars.SUB_REAL}]];
+    let inline_keyboard = [[{text: yeslabel, callback_data: vars.SUB_ANY}]];
     let reply_to_message_id = (message.message_id) ? message.message_id : message.media[0].message_id;
     let text = lang.get('sub_confirm_tip');
     if (!message.forward_date) {
