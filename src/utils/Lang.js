@@ -46,6 +46,7 @@ class Lang {
     if (comment) {
       text += "\n\n" + this.get('admin_finish_comment', { comment });
     }
+    text += "\n#已通过"
     return text;
   };
   /**
@@ -61,6 +62,7 @@ class Lang {
     let text = this.getAdminCommonHeader(message);
     text += "\n" + this.getAdminReject(message);
     text += "\n" + this.get('admin_reject_label', { reason });
+    text += "\n#已拒绝";
     return text;
   };
   getAdminReject (message) {
@@ -207,6 +209,7 @@ class Lang {
   getAdminAction (message) {
     let text = this.getAdminCommonHeader(message);
     text += "\n\n" + this.getMoreHelp();
+    text += "\n\n#未处理";
     return text;
   };
 }
